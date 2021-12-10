@@ -13,7 +13,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(199, 214, 163);
 }
 
 li {
@@ -58,8 +58,10 @@ li a:hover:not(.active) {
   padding: 0.5px;
   text-align: center;
   background: #ffffff;
-  color: rgb(226, 188, 204);
+  color: rgb(248, 248, 248);
   font-size: 20px;
+  background-image: url('https://i.pinimg.com/564x/84/2b/59/842b5951a1af0974e6a87d632df2b24b.jpg');
+
 }
 
 .groove {
@@ -69,23 +71,34 @@ li a:hover:not(.active) {
     text-align: center;
     border-width: 100%;
 }
+
+div.center{
+    text-align: center;
+}
         
         </style>
+
+        <script>
+window.onload = function() {
+  var context = new AudioContext();
+}
+</script>
 </head>
 
 <body>
     <div class="header">
         <h1 style = "font-family: Pacifico">My Homepage~</h1>
-        <p style = "color: rgb(0, 0, 0);">Welcome to my supercool homepage.</p>
+        <p style = "color: rgb(139, 133, 133);">Welcome to my supercool homepage.</p>
       </div>
 
-      <hr>
-      
-    <h1 style = "font-family: Pacifico; text-align: center; color: #f1bfd4">Directories:</h1>
+     
+    
 <ul>
     <li><a style = "font-family: Amatic SC; font-size: 25px" href="index.html">Home</a></li>
     <li><a style = "font-family: Amatic SC; font-size: 25px" href="photo_Gallery.html">Photo Gallery</a></li>
     <li><a style = "font-family: Amatic SC; font-size: 25px" href="about_Us.html">Academic Page</a></li>
+    <li><a style = "font-family: Amatic SC; font-size: 25px" href="video.html">Video</a></li>
+    <li><a style = "font-family: Amatic SC; font-size: 25px" href="Contact.html">Contact</a></li>
 </ul>
 
 
@@ -96,33 +109,40 @@ li a:hover:not(.active) {
           <div class = "groove">
         <h1 style="font-family: Sofia;">My Profile</h2>
         <img style = "border-radius: 50%" height = 300 width = 300 src="C:\Users\user\Desktop\Lab Assignment 1\image\image2.jpg" alt="Forest">
-        <h2>CONTACT</h2>
+        <h2 style = "color: rgb(199, 214, 163);">CONTACT</h2>
         <p>nikadila0405@gmail.com</p>
-        <p>01119818176</p>
-        <p>Lot 2270, Kg Bukit Marak, 16150, Kota
-            <br>Bharu, Kelantan.
+        <p></p>
+        <p>
+            
         </p>
         <br>
-        <h2>EDUCATION</h2>
+        <h2 style = "color: rgb(199, 214, 163);">EDUCATION</h2>
         <p>Computer Science (HONS)</p>
         <p>Diploma In Computer Science</p>
         <p>UiTM Machang</p>
         <p>Uitm Kuala Terengganu (2021 - 2023)</p>
         <br>
 
-        <h2>SKILLS</h2>
+        <h2 style = "color: rgb(199, 214, 163);">SKILLS </h2>
         <p>JAVASCRIPT, LINUX, PHP,<br>HTML, Microsoft Excel, Microsoft Office </p>
 <br>
-       <h2>PROFFESIONAL EXPERIENCE</h2>
+       <h2 style = "color: rgb(199, 214, 163);">PROFFESIONAL EXPERIENCE</h2>
        <p>MONALIZA JULY - AUGUST 2020</p>
        <ul style ="text-align: center;">
         <li>Member of Monaliza online team focused on company / team online stuff</li><br>
         <li>Maintaned the stock data</a></li><br>
         <li>Developed and managed a variety of social media and paid ad campaigns for clients across verticals</li>
     </ul>
-    
-
               </div>
 </div>
+
+<div class="center">
+  <audio controls autoplay>
+    <source src="audio/audio1.ogg" type="audio/ogg">
+    <source src="audio/audio1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
 </body>
 </html>
