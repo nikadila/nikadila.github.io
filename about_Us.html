@@ -5,6 +5,75 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|anaglyph|emboss|shadow-multiple">
         
 <style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(199, 214, 163);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+            * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+            .header {
+  padding: 0.5px;
+  text-align: center;
+  background: #ffffff;
+  color: rgb(248, 248, 248);
+  font-size: 20px;
+  background-image: url('https://i.pinimg.com/564x/84/2b/59/842b5951a1af0974e6a87d632df2b24b.jpg');
+
+}
+
+.groove {
+    
+    border-radius: 10%;
+    border-color: rgb(255, 255, 255);
+    text-align: center;
+    border-width: 100%;
+}
+
+div.center{
+    text-align: center;
+}
+
 table, th, td {
   border:1px solid rgb(233, 220, 184);
 }
@@ -13,10 +82,39 @@ table, th, td {
   margin-left: auto;
   margin-right: auto;
 }
+
+div.center{
+    text-align: center;
+}
+
 </style>
 <body>
 
-    <h1 style="font-family: Sofia; text-align: center; color: #CFB284">My Timetable :)</h1>
+  <div class="header">
+    <h1 style = "font-family: Pacifico">Timetable</h1>
+    
+  </div>
+
+ 
+
+<ul>
+<li><a style = "font-family: Amatic SC; font-size: 25px" href="index.html">Home</a></li>
+<li><a style = "font-family: Amatic SC; font-size: 25px" href="photo_Gallery.html">Photo Gallery</a></li>
+<li><a style = "font-family: Amatic SC; font-size: 25px" href="about_Us.html">Academic Page</a></li>
+<li><a style = "font-family: Amatic SC; font-size: 25px" href="video.html">Video</a></li>
+<li><a style = "font-family: Amatic SC; font-size: 25px" href="Contact.html">Contact</a></li>
+</ul>
+
+<br>
+<div class="center">
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+
+<p id="demo"></p>
+</div>
+
 
 <table class="center" style="width:50%">
   <tr>
