@@ -1,9 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|anaglyph|emboss|shadow-multiple">
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|anaglyph|emboss|shadow-multiple">
+        <meta charset = "UTF-8">
+        <title>Portfolio Website</title>
     <style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(199, 214, 163);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+            * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+            .header {
+  padding: 0.5px;
+  text-align: center;
+  background: #ffffff;
+  color: rgb(248, 248, 248);
+  font-size: 20px;
+  background-image: url('https://i.pinimg.com/564x/84/2b/59/842b5951a1af0974e6a87d632df2b24b.jpg');
+
+}
+
+.groove {
+    
+    border-radius: 10%;
+    border-color: rgb(255, 255, 255);
+    text-align: center;
+    border-width: 100%;
+}
+
+div.center{
+    text-align: center;
+}
+
         p {text-align: center;}
         <meta charset = "UTF-8">
         <title>Photo Gallery</title>
@@ -11,6 +83,22 @@
         </head>
 
 <body>
+
+        <div class="header">
+        <h1 style = "font-family: Pacifico">Photo Gallery</h1>
+        
+      </div>
+
+     
+    
+<ul>
+    <li><a style = "font-family: Amatic SC; font-size: 25px" href="index.html">Home</a></li>
+    <li><a style = "font-family: Amatic SC; font-size: 25px" href="photo_Gallery.html">Photo Gallery</a></li>
+    <li><a style = "font-family: Amatic SC; font-size: 25px" href="about_Us.html">Academic Page</a></li>
+    <li><a style = "font-family: Amatic SC; font-size: 25px" href="video.html">Video</a></li>
+    <li><a style = "font-family: Amatic SC; font-size: 25px" href="Contact.html">Contact</a></li>
+</ul>
+
 <h1 style="font-family: Sofia; text-align: center; color: #CFB284">Photo Gallery</h1>
 <p><img height = 200 width = 200 src="C:\Users\user\Desktop\Lab Assignment 1\image\image4.jpg"</img></p>
 <h3 style="font-family: Balsamiq Sans; text-align:center">Myself</h3>
